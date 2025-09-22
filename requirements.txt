@@ -10,4 +10,6 @@ langchain-google-genai==2.1.12
 pymysql==1.1.1
 twilio==9.3.3
 requests==2.32.3
+gunicorn
+
 -e .
