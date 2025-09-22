@@ -1,0 +1,126 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #493240, #FF0099);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.navbar .nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #0077cc;   /* Eye-catching blue */
+    margin-top: 30px;
+}
+
+/* Options Section */
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+.option-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease, opacity 0.3s ease;
+}
+.option-card i {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hover effect with colors */
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    opacity: 0.9;
+}
+
+/* Different hover colors */
+.option-card.videos:hover {
+    background: rgba(0, 123, 255, 0.1); /* Blue */
+    border: 2px solid #007bff;
+}
+.option-card.docs:hover {
+    background: rgba(255, 165, 0, 0.1); /* Orange */
+    border: 2px solid #ffa500;
+}
+.option-card.music:hover {
+    background: rgba(40, 167, 69, 0.1); /* Green */
+    border: 2px solid #28a745;
+}
+
+/* Featured Resources */
+.featured-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.resource-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.resource-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+.resource-card img {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.resource-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.resource-card p {
+    font-size: 0.95rem;
+    color: #666;
+}

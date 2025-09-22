@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - MindCare</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MindCare</div>
+    <div class="nav-links">
+      <a href="/home">Home</a>
+      <a href="/phq">PHQ-9 Test</a>
+      <a href="/booking">Book a Therapist</a>
+      <a href="/resources">Resources</a>
+      <a href="/chat">Chat</a>
+      <a href="/logout">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <div class="dashboard">
+    <!-- Welcome Card -->
+    <div class="welcome-card">
+      <div class="welcome-header">
+        <div>
+          <h2>Welcome back, ADMIN</h2>
+          <p>Here's what's happening with your mental health support platform today</p>
+        </div>
+        <!-- Notification Bell -->
+        <div class="notification">
+          <i class="fas fa-bell"></i>
+          <span class="badge">3</span>
+        </div>
+      </div>
+
+      <!-- Admin Info -->
+      <div class="admin-info">
+        <div class="admin-badge">AD</div>
+        <div>
+          <strong>ADMIN</strong><br>
+          <span class="role">Administrator</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats">
+      <div class="stat-card purple">
+        <div>
+          <h3>{{ total_patients }}</h3>
+          <p>Total Patients</p>
+          <span class="trend up">↑ 12% from last month</span>
+        </div>
+        <div class="icon"><i class="fas fa-user"></i></div>
+      </div>
+
+      <div class="stat-card green">
+        <div>
+          <h3>{{ total_counsellors }}</h3>
+          <p>Total Counsellors</p>
+          <span class="trend up">↑ 8% from last week</span>
+        </div>
+        <div class="icon"><i class="fas fa-users"></i></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

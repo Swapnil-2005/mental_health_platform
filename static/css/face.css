@@ -1,0 +1,92 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* Background gradient + image */
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(227, 234, 252, 0.6)
+    ),
+    url("/static/pictures/aiface.png");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  color: #333;
+  text-align: center;
+
+  /* Push content down so navbar doesn't overlap */
+  padding-top: 70px; /* equal to navbar height */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #493240, #FF0099);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.nav-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffe5f0;
+  text-decoration: underline;
+}
+
+/* Main Section */
+.diagnosis-start {
+  margin-top: 50px;
+}
+.diagnosis-start h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+.diagnosis-start p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #444;
+}
+.start-btn {
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #FF0099, #493240);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.start-btn:hover {
+  background: linear-gradient(90deg, #493240, #FF0099);
+  transform: scale(1.05);
+}

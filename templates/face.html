@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facial Diagnosis</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/face.css') }}">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MindCare</div>
+    <div class="nav-links">
+      <a href="/admin">Dashboard</a>
+      <a href="/phq">PHQ-9 Test</a>
+      <a href="/booking">Book a Therapist</a>
+      <a href="/resources">Resources</a>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="diagnosis-start">
+    <h1>AI-Powered Facial Diagnosis</h1>
+    <p>Check your current emotional state through our AI-powered face recognition system.</p>
+    <a href="/diagnosis" class="start-btn">Start Facial Diagnosis</a>
+  </section>
+</body>
+</html>

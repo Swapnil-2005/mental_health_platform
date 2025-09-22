@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Session - Dr. Radhika Sharma</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/doctor.css') }}">
+</head>
+<body>
+  <!-- ✅ Navbar (consistent with booking.html) -->
+  <nav class="navbar">
+    <div class="logo">MindCare</div>
+    <ul class="nav-links">
+      <li><a href="/home">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- ✅ Sidebar steps -->
+    <div class="sidebar">
+      <div class="step completed">📅 Choose session details</div>
+      <div class="step active">👤 Enter your details</div>
+      <div class="step">✅ Complete your booking</div>
+    </div>
+
+    <!-- ✅ Main content area -->
+    <div class="content">
+      <!-- Doctor card -->
+      <div class="session-card">
+        <div class="doctor-info">
+          <img src="https://cdn-icons-png.flaticon.com/512/387/387561.png" alt="Doctor" class="doctor-img">
+          <div>
+            <h3>Dr. Radhika Sharma</h3>
+            <p>8 years | Panic Attacks, Stress, Counselling</p>
+          </div>
+        </div>
+        <p><strong>📍 Location:</strong> Punjab</p>
+        <p><strong>💰 Charges:</strong> ₹1500 / 60 min</p>
+        <p><strong>📡 Available:</strong> Online</p>
+        <button class="btn-edit">Edit</button>
+      </div>
+
+      <!-- Verify phone -->
+      <div class="verify">
+        <h4>Verify Phone Number</h4>
+        <p>Please verify to continue your booking</p>
+        <form>
+          <div class="input-group">
+            <span>+91</span>
+            <input type="text" placeholder="Enter phone number">
+          </div>
+          <button type="submit" class="btn-verify">Send OTP</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ✅ Right side calendar -->
+    <div class="calendar-section">
+      <h3>Choose Session Date</h3>
+      <iframe src="https://calendar.google.com/calendar/embed?mode=MONTH&showTitle=0&showPrint=0"
+              style="border:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Psychologist</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/booking.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="navbar-brand">Medibot</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/chat">Chatbot</a></li>
+        <li><a href="/phq9">PHQ-9 Test</a></li>
+        <li><a href="/booking">Booking</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Filter Section -->
+  <div class="container filter-section">
+    <h1 class="text-center">Book a Psychologist</h1>
+    <div class="filters">
+      <select>
+        <option selected disabled>Select Location</option>
+        <option>Jammu & Kashmir</option>
+        <option>Delhi</option>
+        <option>Punjab</option>
+        <option>Maharashtra</option>
+        <option>Karnataka</option>
+        <option>Tamil Nadu</option>
+      </select>
+
+      <select>
+        <option selected disabled>Filter by</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Language: English</option>
+        <option>Language: Hindi</option>
+        <option>Language: Punjabi</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Doctor Cards -->
+  <div class="container doctor-grid">
+
+    <!-- Doctor 1 -->
+    <div class="doctor-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Doctor Icon">
+      <h2>Dr. Radhika Sharma</h2>
+      <p><strong>Experience:</strong> 8 years</p>
+      <p><strong>Charges:</strong> ₹1500 / 60 mins</p>
+      <p><strong>Expertise:</strong> Anxiety, Panic Attacks, Stress</p>
+      <p><strong>Available:</strong> Online</p>
+      <a href="/doctor2" class="btn-book">Book Now</a>
+    </div>
+
+    <!-- Doctor 2 -->
+    <div class="doctor-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Doctor Icon">
+      <h2>Dr. Aarav Mehta</h2>
+      <p><strong>Experience:</strong> 12 years</p>
+      <p><strong>Charges:</strong> ₹2000 / 60 mins</p>
+      <p><strong>Expertise:</strong> Depression, Motivation, Burnout</p>
+      <p><strong>Available:</strong> In-person, Online</p>
+      <a href="/doctor1" class="btn-book">Book Now</a>
+    </div>
+
+    <!-- Doctor 3 -->
+    <div class="doctor-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Doctor Icon">
+      <h2>Dr. Simran Kaur</h2>
+      <p><strong>Experience:</strong> 6 years</p>
+      <p><strong>Charges:</strong> ₹1200 / 60 mins</p>
+      <p><strong>Expertise:</strong> Lack of Motivation, Exam Stress</p>
+      <p><strong>Available:</strong>  Online</p>
+      <a href="/doctor3" class="btn-book">Book Now</a>
+    </div>
+
+    <!-- Doctor 4 -->
+    <div class="doctor-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Doctor Icon">
+      <h2>Dr. Kabir Verma</h2>
+      <p><strong>Experience:</strong> 10 years</p>
+      <p><strong>Charges:</strong> ₹1800 / 60 mins</p>
+      <p><strong>Expertise:</strong> Anxiety, Panic Attacks, Low Self-Esteem</p>
+      <p><strong>Available:</strong> In-person, Online </p>
+      <a href="/doctor4" class="btn-book">Book Now</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

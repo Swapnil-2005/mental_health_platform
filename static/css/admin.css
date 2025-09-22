@@ -1,0 +1,133 @@
+/* General */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #493240, #FF0099);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.navbar .nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Layout */
+.dashboard {
+  padding: 30px;
+}
+
+/* Welcome Card */
+.welcome-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-card h2 {
+  margin: 0 0 10px;
+}
+.welcome-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Notification Bell */
+.notification {
+  position: relative;
+  font-size: 22px;
+  color: #493240;
+  cursor: pointer;
+}
+.notification .badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Admin Info */
+.admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #493240;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.role {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+.stat-card h3 {
+  margin: 0;
+  font-size: 26px;
+}
+.stat-card p {
+  margin: 5px 0;
+  color: #555;
+}
+.trend {
+  font-size: 13px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.trend.up {
+  color: green;
+}
+.icon {
+  font-size: 32px;
+  opacity: 0.7;
+}
+.purple .icon { color: #a855f7; }
+.green .icon { color: #10b981; }

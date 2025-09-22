@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Tools for Mental Health</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/resources.css') }}">
+
+    <style>
+        /* Extra hover effects */
+        .option-card:hover {
+            background: linear-gradient(135deg, #FF0099, #493240);
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+            opacity: 0.9;
+        }
+
+        .option-card:hover i {
+            color: white;
+        }
+        .option-card:hover p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MindCare</div>
+        <div class="nav-links">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/phq9">PHQ-9 Test</a>
+            <a href="/booking">Book a Therapist</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="resource-section">
+        <h1 class="page-title">Therapy Tools for Mental Health</h1>
+        
+        <!-- Top Options -->
+        <div class="options-container">
+            <a href="/video" class="option-card">
+                <i class="icon">🎥</i>
+                <p>Videos</p>
+            </a>
+            <a href="/document" class="option-card">
+                <i class="icon">📄</i>
+                <p>Text Docs</p>
+            </a>
+            <a href="/music" class="option-card">
+                <i class="icon">🎵</i>
+                <p>Music</p>
+            </a>
+        </div>
+
+        <!-- Featured Resources -->
+        <h2 class="featured-title">Featured Resources</h2>
+        <div class="cards-container">
+            <a href="/video" class="resource-card">
+                <img src="{{ url_for('static', filename='pictures/relax1.png') }}" alt="Relaxing Video">
+                <h3>VIDEO</h3>
+                <p>Relaxing Videos</p>
+            </a>
+            <a href="/document" class="resource-card">
+                <img src="{{ url_for('static', filename='pictures/relax2.png') }}" alt="Mood Refreshing Document">
+                <h3>DOCUMENT</h3>
+                <p>Mood Refreshing Document</p>
+            </a>
+            <a href="/music" class="resource-card">
+                <img src="{{ url_for('static', filename='pictures/relax3.png') }}" alt="Meditating Music">
+                <h3>MUSIC</h3>
+                <p>Meditating Music</p>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

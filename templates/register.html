@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}"/>
+    <title> MindCare</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-nav">
+    <!-- Navbar -->
+    <nav class="navbar d-flex justify-content-between">
+        <a href="" class="navbar-brand text-light">MindCare</a>
+
+        <!-- Kebab Menu -->
+        <div class="dropdown me-3">
+            <button class="btn btn-light" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                &#8942; <!-- vertical dots -->
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="/">Home</a></li>
+                <li><a class="dropdown-item" href="/chatbot">Chatbot</a></li>
+                <li><a class="dropdown-item" href="/tips">Mental Health Tips</a></li>
+                <li><a class="dropdown-item" href="/about">About Us</a></li>
+                <li><a class="dropdown-item" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row align-items-start">
+            <!-- Left Section: Heading + Image -->
+            <div class="col-md-8 text-center mt-80">
+                <h1 class="text-light display-4 heading-text">
+                    Because Your Mental Health Matters
+                </h1>
+                <!-- Chatbot Image -->
+                <img src="{{ url_for('static', filename='pictures/livechat.jpeg') }}" 
+                     alt="Chatbot" 
+                     class="img-fluid chatbot-img mt-4">
+            </div>
+
+            <!-- Right Section: Register Form -->
+            <div class="col-md-4">
+                <div class="card mt-80">
+                    <div class="card-body">
+                        <form class="form" method="post" action="/add_user">
+                            <label>Username</label><br>
+                            <input type="text" class="form-control" name="uname" placeholder="Enter Name" required/><br>
+                            <label>Email</label><br>
+                            <input type="email" class="form-control" name="uemail" placeholder="Enter Email" required/><br>
+                            <label>Password</label><br>
+                            <input type="password" class="form-control" name="upassword" placeholder="Enter Password" required/><br>
+                            <input type="submit" class="btn btn-primary login-btn" value="Register"/>
+                        </form>
+                        <p class="mt-2">Already a member ? <a href="/">Login Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
